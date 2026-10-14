@@ -14,7 +14,7 @@ of Selective Prediction* (submitted to Computer Methods and Programs in Biomedic
 | Path | Contents |
 | --- | --- |
 | `src/`, `scripts/` | Training and analysis pipeline. Every analysis step runs on CPU from the released logits, so no GPU is needed to reproduce the results. |
-| `outputs/logits/` | 48 logit bundles (validation/test logits, labels, MC-dropout moments) exported by the training runs. |
+| `outputs/logits/` | 48 logit bundles (validation/test logits, labels, MC-dropout moments) exported by the training runs — **attached to the [v1.1 release](../../releases/tag/v1.1.0) as `logits.zip`** (38 MB), unpack into `outputs/logits/`. |
 | `outputs/results/` | Per-subset metrics, risk--coverage curves, the exchangeability control, generated LaTeX tables. |
 | `outputs/figures/` | Per-subset risk--coverage figures. |
 | `paper/` | `NUMBERS.md` (every number quoted in the manuscript), `REVISION_NOTE.md` (what changed between v1.0 and v1.1 and why), generated tables, the published MedMNIST baselines used for the sanity check. |
@@ -41,6 +41,7 @@ of Selective Prediction* (submitted to Computer Methods and Programs in Biomedic
 ## Reproduce (CPU only)
 
 ```bash
+unzip logits.zip -d outputs/logits            # from the v1.1 release
 python scripts/smoke_test.py                  # pins the scoring conventions
 python scripts/run_selective.py --stem pathmnist_resnet18_28
 python scripts/summarize_results.py --size 28
