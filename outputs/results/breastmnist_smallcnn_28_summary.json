@@ -1,0 +1,66 @@
+{
+  "sources": [
+    "D:\\HWB\\S1\\medmnist-abstention\\outputs\\logits\\breastmnist_smallcnn_28_seed0_logits.npz",
+    "D:\\HWB\\S1\\medmnist-abstention\\outputs\\logits\\breastmnist_smallcnn_28_seed1_logits.npz"
+  ],
+  "meta": {
+    "dataset": "breastmnist",
+    "task": "binary",
+    "n_classes": 2,
+    "model": "smallcnn",
+    "size": 28,
+    "seed": 0,
+    "epochs": 15,
+    "test_acc": 0.8589743589743589
+  },
+  "n_test": 156,
+  "test_accuracy": 0.8589743589743589,
+  "methods_run": [
+    "msp",
+    "entropy",
+    "temp_scaling",
+    "margin",
+    "mc_dropout",
+    "ensemble",
+    "conformal_lac",
+    "conformal_aps"
+  ],
+  "methods_skipped": [],
+  "best_method": "msp",
+  "best_coverage": 0.8589743589743589,
+  "best_method_verdict": "another_method_better",
+  "tied_methods": [
+    "conformal_lac"
+  ],
+  "ensemble_advantage": {
+    "delta": -0.019230769230769162,
+    "ci_low": -0.15384615384615385,
+    "ci_high": 0.09615384615384615,
+    "prob_positive": 0.284,
+    "n_boot": 2000,
+    "comparison": "ensemble_vs_msp"
+  },
+  "operating_point": {
+    "max_risk": 0.1,
+    "coverage": 0.8525641025641025,
+    "risk": 0.09774436090225569,
+    "clinical_translation": {
+      "coverage": 0.8525641025641025,
+      "risk": 0.09774436090225569,
+      "miss_per_100": 9.774436090225569,
+      "deferred_per_100": 14.743589743589746
+    }
+  },
+  "class_conditional_example": {
+    "0": {
+      "n": 42,
+      "coverage": 0.2857142857142857,
+      "risk_on_accepted": 0.25
+    },
+    "1": {
+      "n": 114,
+      "coverage": 0.5789473684210527,
+      "risk_on_accepted": 0.0
+    }
+  }
+}

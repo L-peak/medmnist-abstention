@@ -1,0 +1,104 @@
+{
+  "sources": [
+    "D:\\HWB\\S1\\medmnist-abstention\\outputs\\logits\\bloodmnist_resnet18_28_seed0_logits.npz",
+    "D:\\HWB\\S1\\medmnist-abstention\\outputs\\logits\\bloodmnist_resnet18_28_seed1_logits.npz",
+    "D:\\HWB\\S1\\medmnist-abstention\\outputs\\logits\\bloodmnist_resnet18_28_seed2_logits.npz"
+  ],
+  "meta": {
+    "dataset": "bloodmnist",
+    "task": "multi-class",
+    "n_classes": 8,
+    "model": "resnet18",
+    "size": 28,
+    "seed": 0,
+    "epochs": 20,
+    "test_acc": 0.9561531715872552
+  },
+  "n_test": 3421,
+  "test_accuracy": 0.9561531715872552,
+  "methods_run": [
+    "msp",
+    "entropy",
+    "temp_scaling",
+    "margin",
+    "mc_dropout",
+    "ensemble",
+    "conformal_lac",
+    "conformal_aps"
+  ],
+  "methods_skipped": [],
+  "best_method": "mc_dropout",
+  "best_coverage": 1.0,
+  "best_method_verdict": "ensemble_tied_for_best",
+  "tied_methods": [
+    "conformal_aps",
+    "conformal_lac",
+    "ensemble",
+    "entropy",
+    "margin",
+    "mc_dropout",
+    "msp",
+    "temp_scaling"
+  ],
+  "ensemble_advantage": {
+    "delta": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "prob_positive": 0.0,
+    "n_boot": 2000,
+    "comparison": "ensemble_vs_mc_dropout"
+  },
+  "operating_point": {
+    "max_risk": 0.1,
+    "coverage": 1.0,
+    "risk": 0.04384682841274479,
+    "clinical_translation": {
+      "coverage": 1.0,
+      "risk": 0.04384682841274479,
+      "miss_per_100": 4.384682841274479,
+      "deferred_per_100": 0.0
+    }
+  },
+  "class_conditional_example": {
+    "0": {
+      "n": 244,
+      "coverage": 0.38524590163934425,
+      "risk_on_accepted": 0.0
+    },
+    "1": {
+      "n": 624,
+      "coverage": 0.8205128205128205,
+      "risk_on_accepted": 0.0
+    },
+    "2": {
+      "n": 311,
+      "coverage": 0.6141479099678456,
+      "risk_on_accepted": 0.0
+    },
+    "3": {
+      "n": 579,
+      "coverage": 0.2987910189982729,
+      "risk_on_accepted": 0.0
+    },
+    "4": {
+      "n": 243,
+      "coverage": 0.42386831275720166,
+      "risk_on_accepted": 0.0
+    },
+    "5": {
+      "n": 284,
+      "coverage": 0.3485915492957746,
+      "risk_on_accepted": 0.0
+    },
+    "6": {
+      "n": 666,
+      "coverage": 0.6246246246246246,
+      "risk_on_accepted": 0.0024038461538461453
+    },
+    "7": {
+      "n": 470,
+      "coverage": 0.26382978723404255,
+      "risk_on_accepted": 0.0
+    }
+  }
+}

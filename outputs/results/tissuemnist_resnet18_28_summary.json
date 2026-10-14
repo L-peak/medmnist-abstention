@@ -1,0 +1,97 @@
+{
+  "sources": [
+    "D:\\HWB\\S1\\medmnist-abstention\\outputs\\logits\\tissuemnist_resnet18_28_seed0_logits.npz",
+    "D:\\HWB\\S1\\medmnist-abstention\\outputs\\logits\\tissuemnist_resnet18_28_seed1_logits.npz",
+    "D:\\HWB\\S1\\medmnist-abstention\\outputs\\logits\\tissuemnist_resnet18_28_seed2_logits.npz"
+  ],
+  "meta": {
+    "dataset": "tissuemnist",
+    "task": "multi-class",
+    "n_classes": 8,
+    "model": "resnet18",
+    "size": 28,
+    "seed": 0,
+    "epochs": 20,
+    "test_acc": 0.6661167512690356
+  },
+  "n_test": 47280,
+  "test_accuracy": 0.6661167512690356,
+  "methods_run": [
+    "msp",
+    "entropy",
+    "temp_scaling",
+    "margin",
+    "mc_dropout",
+    "ensemble",
+    "conformal_lac",
+    "conformal_aps"
+  ],
+  "methods_skipped": [],
+  "best_method": "ensemble",
+  "best_coverage": 0.40632402707275805,
+  "best_method_verdict": "ensemble_strictly_best",
+  "tied_methods": [
+    "ensemble"
+  ],
+  "ensemble_advantage": {
+    "delta": 0.08229695431472084,
+    "ci_low": 0.06892766497461927,
+    "ci_high": 0.0959618231810491,
+    "prob_positive": 1.0,
+    "n_boot": 2000,
+    "comparison": "ensemble_vs_temp_scaling"
+  },
+  "operating_point": {
+    "max_risk": 0.1,
+    "coverage": 0.40632402707275805,
+    "risk": 0.09999479464889904,
+    "clinical_translation": {
+      "coverage": 0.40632402707275805,
+      "risk": 0.09999479464889904,
+      "miss_per_100": 9.999479464889905,
+      "deferred_per_100": 59.36759729272419
+    }
+  },
+  "class_conditional_example": {
+    "0": {
+      "n": 15165,
+      "coverage": 0.6241345202769535,
+      "risk_on_accepted": 0.06391970417326998
+    },
+    "1": {
+      "n": 2233,
+      "coverage": 0.3399014778325123,
+      "risk_on_accepted": 0.6640316205533596
+    },
+    "2": {
+      "n": 1677,
+      "coverage": 0.2313655336911151,
+      "risk_on_accepted": 0.32474226804123707
+    },
+    "3": {
+      "n": 4402,
+      "coverage": 0.4445706497046797,
+      "risk_on_accepted": 0.12774655084312725
+    },
+    "4": {
+      "n": 3369,
+      "coverage": 0.35114277233600477,
+      "risk_on_accepted": 0.24767540152155532
+    },
+    "5": {
+      "n": 2202,
+      "coverage": 0.25522252497729336,
+      "risk_on_accepted": 0.3629893238434164
+    },
+    "6": {
+      "n": 11201,
+      "coverage": 0.5590572270333006,
+      "risk_on_accepted": 0.09389971255190033
+    },
+    "7": {
+      "n": 7031,
+      "coverage": 0.4357843834447447,
+      "risk_on_accepted": 0.18113577023498695
+    }
+  }
+}

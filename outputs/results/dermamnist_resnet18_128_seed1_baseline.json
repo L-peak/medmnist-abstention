@@ -1,0 +1,117 @@
+{
+  "dataset": "dermamnist",
+  "model": "resnet18",
+  "size": 128,
+  "seed": 1,
+  "epochs": 20,
+  "task": "multi-class",
+  "n_classes": 7,
+  "n_test": 2005,
+  "test_acc": 0.7551122194513715,
+  "macro_auc": null,
+  "minutes": 2.487786837418874,
+  "bundle_path": "/kaggle/working/project/outputs/logits/dermamnist_resnet18_128_seed1_logits.npz",
+  "ckpt_path": null,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.9385777136492495,
+      "val_acc": 0.6909272183449651
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.795660740616013,
+      "val_acc": 0.7347956131605184
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.7555361635524706,
+      "val_acc": 0.711864406779661
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.7184255625784134,
+      "val_acc": 0.7547357926221336
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.6891049882799782,
+      "val_acc": 0.7617148554336989
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.6642288189140523,
+      "val_acc": 0.7587238285144566
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.6335615255326709,
+      "val_acc": 0.7567298105682951
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.6039713228397062,
+      "val_acc": 0.7587238285144566
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.5760414785302381,
+      "val_acc": 0.7577268195413759
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.542699851985663,
+      "val_acc": 0.7706879361914257
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.4877756109919207,
+      "val_acc": 0.765702891326022
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.43935162345761153,
+      "val_acc": 0.7766699900299102
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.3575221398502133,
+      "val_acc": 0.7577268195413759
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.25576072893861324,
+      "val_acc": 0.7617148554336989
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.16417630740276704,
+      "val_acc": 0.7337986041874377
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.09755309896265302,
+      "val_acc": 0.7407776669990029
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.046162724801697676,
+      "val_acc": 0.7637088733798604
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.026156717584396253,
+      "val_acc": 0.7637088733798604
+    },
+    {
+      "epoch": 19,
+      "train_loss": 0.01719636745030249,
+      "val_acc": 0.752741774675972
+    },
+    {
+      "epoch": 20,
+      "train_loss": 0.012777746802181817,
+      "val_acc": 0.7587238285144566
+    }
+  ]
+}

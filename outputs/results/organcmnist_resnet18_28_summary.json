@@ -1,0 +1,119 @@
+{
+  "sources": [
+    "D:\\HWB\\S1\\medmnist-abstention\\outputs\\logits\\organcmnist_resnet18_28_seed0_logits.npz",
+    "D:\\HWB\\S1\\medmnist-abstention\\outputs\\logits\\organcmnist_resnet18_28_seed1_logits.npz",
+    "D:\\HWB\\S1\\medmnist-abstention\\outputs\\logits\\organcmnist_resnet18_28_seed2_logits.npz"
+  ],
+  "meta": {
+    "dataset": "organcmnist",
+    "task": "multi-class",
+    "n_classes": 11,
+    "model": "resnet18",
+    "size": 28,
+    "seed": 0,
+    "epochs": 20,
+    "test_acc": 0.9161392405063291
+  },
+  "n_test": 8216,
+  "test_accuracy": 0.9161392405063291,
+  "methods_run": [
+    "msp",
+    "entropy",
+    "temp_scaling",
+    "margin",
+    "mc_dropout",
+    "ensemble",
+    "conformal_lac",
+    "conformal_aps"
+  ],
+  "methods_skipped": [],
+  "best_method": "ensemble",
+  "best_coverage": 1.0,
+  "best_method_verdict": "ensemble_tied_for_best",
+  "tied_methods": [
+    "conformal_aps",
+    "conformal_lac",
+    "ensemble",
+    "entropy",
+    "margin",
+    "mc_dropout",
+    "msp",
+    "temp_scaling"
+  ],
+  "ensemble_advantage": {
+    "delta": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "prob_positive": 0.0,
+    "n_boot": 2000,
+    "comparison": "ensemble_vs_entropy"
+  },
+  "operating_point": {
+    "max_risk": 0.1,
+    "coverage": 1.0,
+    "risk": 0.08386075949367089,
+    "clinical_translation": {
+      "coverage": 1.0,
+      "risk": 0.08386075949367089,
+      "miss_per_100": 8.38607594936709,
+      "deferred_per_100": 0.0
+    }
+  },
+  "class_conditional_example": {
+    "0": {
+      "n": 828,
+      "coverage": 0.5084541062801933,
+      "risk_on_accepted": 0.009501187648456089
+    },
+    "1": {
+      "n": 431,
+      "coverage": 0.41299303944315546,
+      "risk_on_accepted": 0.011235955056179803
+    },
+    "2": {
+      "n": 421,
+      "coverage": 0.4418052256532066,
+      "risk_on_accepted": 0.016129032258064502
+    },
+    "3": {
+      "n": 421,
+      "coverage": 0.40380047505938244,
+      "risk_on_accepted": 0.0
+    },
+    "4": {
+      "n": 727,
+      "coverage": 0.36176066024759285,
+      "risk_on_accepted": 0.0
+    },
+    "5": {
+      "n": 735,
+      "coverage": 0.29523809523809524,
+      "risk_on_accepted": 0.004608294930875556
+    },
+    "6": {
+      "n": 1835,
+      "coverage": 0.6566757493188011,
+      "risk_on_accepted": 0.0
+    },
+    "7": {
+      "n": 549,
+      "coverage": 0.5883424408014571,
+      "risk_on_accepted": 0.0
+    },
+    "8": {
+      "n": 557,
+      "coverage": 0.5745062836624776,
+      "risk_on_accepted": 0.0031250000000000444
+    },
+    "9": {
+      "n": 750,
+      "coverage": 0.48133333333333334,
+      "risk_on_accepted": 0.0
+    },
+    "10": {
+      "n": 962,
+      "coverage": 0.48232848232848236,
+      "risk_on_accepted": 0.0
+    }
+  }
+}

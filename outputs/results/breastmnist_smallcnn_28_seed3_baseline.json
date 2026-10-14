@@ -1,0 +1,26 @@
+{
+  "dataset": "breastmnist",
+  "model": "smallcnn",
+  "size": 28,
+  "seed": 3,
+  "epochs": 2,
+  "task": "binary",
+  "n_classes": 2,
+  "n_test": 156,
+  "test_acc": 0.2948717948717949,
+  "minutes": 1.2162940621376037,
+  "bundle_path": "D:\\HWB\\S1\\medmnist-abstention\\outputs\\logits\\breastmnist_smallcnn_28_seed3_logits.npz",
+  "ckpt_path": null,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5877136374131228,
+      "val_acc": 0.4230769230769231
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.48884814464565596,
+      "val_acc": 0.3076923076923077
+    }
+  ]
+}

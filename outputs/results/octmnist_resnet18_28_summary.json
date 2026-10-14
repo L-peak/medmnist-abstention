@@ -1,0 +1,77 @@
+{
+  "sources": [
+    "D:\\HWB\\S1\\medmnist-abstention\\outputs\\logits\\octmnist_resnet18_28_seed0_logits.npz",
+    "D:\\HWB\\S1\\medmnist-abstention\\outputs\\logits\\octmnist_resnet18_28_seed1_logits.npz",
+    "D:\\HWB\\S1\\medmnist-abstention\\outputs\\logits\\octmnist_resnet18_28_seed2_logits.npz"
+  ],
+  "meta": {
+    "dataset": "octmnist",
+    "task": "multi-class",
+    "n_classes": 4,
+    "model": "resnet18",
+    "size": 28,
+    "seed": 0,
+    "epochs": 20,
+    "test_acc": 0.748
+  },
+  "n_test": 1000,
+  "test_accuracy": 0.748,
+  "methods_run": [
+    "msp",
+    "entropy",
+    "temp_scaling",
+    "margin",
+    "mc_dropout",
+    "ensemble",
+    "conformal_lac",
+    "conformal_aps"
+  ],
+  "methods_skipped": [],
+  "best_method": "ensemble",
+  "best_coverage": 0.593,
+  "best_method_verdict": "ensemble_strictly_best",
+  "tied_methods": [
+    "ensemble"
+  ],
+  "ensemble_advantage": {
+    "delta": 0.04699999999999993,
+    "ci_low": -0.02400000000000002,
+    "ci_high": 0.127,
+    "prob_positive": 0.9205,
+    "n_boot": 2000,
+    "comparison": "ensemble_vs_mc_dropout"
+  },
+  "operating_point": {
+    "max_risk": 0.1,
+    "coverage": 0.593,
+    "risk": 0.0994940978077572,
+    "clinical_translation": {
+      "coverage": 0.593,
+      "risk": 0.0994940978077572,
+      "miss_per_100": 9.94940978077572,
+      "deferred_per_100": 40.7
+    }
+  },
+  "class_conditional_example": {
+    "0": {
+      "n": 250,
+      "coverage": 0.824,
+      "risk_on_accepted": 0.0
+    },
+    "1": {
+      "n": 250,
+      "coverage": 0.42,
+      "risk_on_accepted": 0.02857142857142858
+    },
+    "2": {
+      "n": 250,
+      "coverage": 0.172,
+      "risk_on_accepted": 0.8837209302325582
+    },
+    "3": {
+      "n": 250,
+      "coverage": 0.584,
+      "risk_on_accepted": 0.0
+    }
+  }
+}

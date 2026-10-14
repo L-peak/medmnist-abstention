@@ -1,0 +1,141 @@
+{
+  "sources": [
+    "D:\\HWB\\S1\\medmnist-abstention\\outputs\\logits\\chestmnist_resnet18_28_seed0_logits.npz",
+    "D:\\HWB\\S1\\medmnist-abstention\\outputs\\logits\\chestmnist_resnet18_28_seed1_logits.npz",
+    "D:\\HWB\\S1\\medmnist-abstention\\outputs\\logits\\chestmnist_resnet18_28_seed2_logits.npz"
+  ],
+  "meta": {
+    "dataset": "chestmnist",
+    "task": "multi-label",
+    "n_classes": 14,
+    "model": "resnet18",
+    "size": 28,
+    "seed": 0,
+    "epochs": 20,
+    "test_acc": 0.4472429010832256
+  },
+  "n_test": 22433,
+  "test_accuracy": 0.4472429010832256,
+  "methods_run": [
+    "msp",
+    "entropy",
+    "mc_dropout",
+    "ensemble"
+  ],
+  "methods_skipped": [
+    {
+      "method": "temp_scaling",
+      "reason": "not defined for multi-label subsets"
+    },
+    {
+      "method": "margin",
+      "reason": "not defined for multi-label subsets"
+    },
+    {
+      "method": "conformal_lac",
+      "reason": "not defined for multi-label subsets"
+    },
+    {
+      "method": "conformal_aps",
+      "reason": "not defined for multi-label subsets"
+    }
+  ],
+  "best_method": "ensemble",
+  "best_coverage": 1.0,
+  "best_method_verdict": "ensemble_tied_for_best",
+  "tied_methods": [
+    "ensemble",
+    "entropy",
+    "mc_dropout",
+    "msp"
+  ],
+  "ensemble_advantage": null,
+  "operating_point": {
+    "max_risk": 0.1,
+    "coverage": 1.0,
+    "risk": 0.06644866300284628,
+    "clinical_translation": {
+      "coverage": 1.0,
+      "risk": 0.06644866300284628,
+      "miss_per_100": 6.644866300284629,
+      "deferred_per_100": 0.0
+    }
+  },
+  "class_conditional_example": {
+    "0": {
+      "n": 3071,
+      "coverage": 0.43927059589710193,
+      "risk_on_accepted": 0.3661971830985915
+    },
+    "1": {
+      "n": 1113,
+      "coverage": 0.5795148247978437,
+      "risk_on_accepted": 0.3162790697674419
+    },
+    "2": {
+      "n": 2424,
+      "coverage": 0.2545379537953795,
+      "risk_on_accepted": 0.5072933549432739
+    },
+    "3": {
+      "n": 6172,
+      "coverage": 0.45722618276085547,
+      "risk_on_accepted": 0.34798015591778875
+    },
+    "4": {
+      "n": 1568,
+      "coverage": 0.5440051020408163,
+      "risk_on_accepted": 0.35052754982415
+    },
+    "5": {
+      "n": 2145,
+      "coverage": 0.6801864801864802,
+      "risk_on_accepted": 0.2748457847840987
+    },
+    "6": {
+      "n": 382,
+      "coverage": 0.7617801047120419,
+      "risk_on_accepted": 0.27835051546391754
+    },
+    "7": {
+      "n": 1595,
+      "coverage": 0.4789968652037618,
+      "risk_on_accepted": 0.33507853403141363
+    },
+    "8": {
+      "n": 1021,
+      "coverage": 0.564152791380999,
+      "risk_on_accepted": 0.28645833333333337
+    },
+    "9": {
+      "n": 528,
+      "coverage": 0.48674242424242425,
+      "risk_on_accepted": 0.3151750972762646
+    },
+    "10": {
+      "n": 962,
+      "coverage": 0.6029106029106029,
+      "risk_on_accepted": 0.34310344827586203
+    },
+    "11": {
+      "n": 571,
+      "coverage": 0.712784588441331,
+      "risk_on_accepted": 0.30712530712530717
+    },
+    "12": {
+      "n": 703,
+      "coverage": 0.635846372688478,
+      "risk_on_accepted": 0.29753914988814323
+    },
+    "13": {
+      "n": 178,
+      "coverage": 0.8426966292134831,
+      "risk_on_accepted": 0.24
+    }
+  },
+  "metric_note": "multi-label: risk = per-sample Hamming error (1 - label accuracy); exact-match statistics are reported separately",
+  "macro_auc": 0.6560365930163027,
+  "subset_accuracy": 0.4472429010832256,
+  "exact_match_correct_rate": 0.4472429010832256,
+  "hamming_risk_at_full_coverage": 0.06644866300284658
+}
