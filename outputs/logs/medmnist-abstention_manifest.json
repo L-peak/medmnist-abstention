@@ -1,0 +1,22 @@
+{
+  "model": "smallcnn",
+  "size": 28,
+  "epochs": 2,
+  "max_minutes": 30.0,
+  "total_minutes": 2.5312105814615887e-06,
+  "stopped_early": false,
+  "runs": [
+    {
+      "dataset": "breastmnist",
+      "seed": 2,
+      "status": "skipped",
+      "bundle": "D:\\HWB\\S1\\medmnist-abstention\\outputs\\logits\\breastmnist_smallcnn_28_seed2_logits.npz"
+    },
+    {
+      "dataset": "breastmnist",
+      "seed": 3,
+      "status": "skipped",
+      "bundle": "D:\\HWB\\S1\\medmnist-abstention\\outputs\\logits\\breastmnist_smallcnn_28_seed3_logits.npz"
+    }
+  ]
+}

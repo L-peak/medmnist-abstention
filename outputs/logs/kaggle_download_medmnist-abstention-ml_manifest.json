@@ -1,0 +1,58 @@
+{
+  "model": "resnet18",
+  "size": 28,
+  "epochs": 20,
+  "max_minutes": 300.0,
+  "total_minutes": 49.128549659252165,
+  "stopped_early": false,
+  "runs": [
+    {
+      "dataset": "chestmnist",
+      "seed": 0,
+      "status": "ok",
+      "model": "resnet18",
+      "size": 28,
+      "epochs": 20,
+      "task": "multi-label",
+      "n_classes": 14,
+      "n_test": 314062,
+      "test_acc": 0.4472429010832256,
+      "macro_auc": 0.6560365930163027,
+      "minutes": 14.873755828539531,
+      "bundle_path": "/kaggle/working/project/outputs/logits/chestmnist_resnet18_28_seed0_logits.npz",
+      "ckpt_path": null
+    },
+    {
+      "dataset": "chestmnist",
+      "seed": 1,
+      "status": "ok",
+      "model": "resnet18",
+      "size": 28,
+      "epochs": 20,
+      "task": "multi-label",
+      "n_classes": 14,
+      "n_test": 314062,
+      "test_acc": 0.4552667944545981,
+      "macro_auc": 0.6648755303246171,
+      "minutes": 14.967911052703858,
+      "bundle_path": "/kaggle/working/project/outputs/logits/chestmnist_resnet18_28_seed1_logits.npz",
+      "ckpt_path": null
+    },
+    {
+      "dataset": "chestmnist",
+      "seed": 2,
+      "status": "ok",
+      "model": "resnet18",
+      "size": 28,
+      "epochs": 20,
+      "task": "multi-label",
+      "n_classes": 14,
+      "n_test": 314062,
+      "test_acc": 0.4418936388356439,
+      "macro_auc": 0.6457586342009701,
+      "minutes": 14.917481561501821,
+      "bundle_path": "/kaggle/working/project/outputs/logits/chestmnist_resnet18_28_seed2_logits.npz",
+      "ckpt_path": null
+    }
+  ]
+}
