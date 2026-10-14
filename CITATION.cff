@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite the manuscript and the MedMNIST dataset."
+title: "When Should a Medical Image Classifier Abstain? A Cross-Modality Benchmark of Selective Prediction"
+type: software
+authors:
+  - family-names: Li
+    given-names: Zhaoyang
+    affiliation: "Henan Polytechnic University, Jiaozuo, Henan, China"
+    email: 212603010048@home.hpu.edu.cn
+year: 2026
+license: MIT
+abstract: >-
+  Benchmark of eight abstention scores (maximum softmax probability, predictive
+  entropy, temperature scaling, the top-1/top-2 margin, Monte-Carlo dropout, deep
+  ensembles, and split conformal LAC and APS scored by prediction-set size) on twelve
+  MedMNIST 2D subsets covering eleven diagnostic modalities, with three seeds at
+  28x28 and two seeds at 128x128. Reports both a post-hoc and a validation-frozen
+  operating point for every score, and quantifies the validation-to-test transfer gap.
+  Includes the released logit bundles so every reported number can be recomputed on
+  CPU.
+version: 1.1.0
+references:
+  - type: article
+    title: "MedMNIST v2 - A large-scale lightweight benchmark for 2D and 3D biomedical image classification"
+    authors:
+      - family-names: Yang
+        given-names: Jiancheng
+    year: 2023
+    journal: Scientific Data
+    doi: 10.1038/s41597-022-01721-8

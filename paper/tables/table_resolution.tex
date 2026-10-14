@@ -1,0 +1,14 @@
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lccccc}
+\toprule
+Subset & Acc $28^2$ & Acc $128^2$ & Best by AURC at $128^2$ & Cov@0.1 $28^2$ & Cov@0.1 $128^2$ \\
+\midrule
+\dataset{bloodmnist} & 0.958 & 0.985 & mc dropout & 1.000 & \textbf{1.000} \\
+\dataset{dermamnist} & 0.751 & 0.758 & ensemble & 0.663 & \textbf{0.663} \\
+\dataset{octmnist} & 0.754 & 0.860 & ensemble & 0.593 & \textbf{0.902} \\
+\dataset{pathmnist} & 0.898 & 0.919 & ensemble & 0.942 & \textbf{1.000} \\
+\dataset{retinamnist} & 0.472 & 0.475 & ensemble & 0.150 & \textbf{0.133} \\
+\bottomrule
+\end{tabular}
+\normalsize

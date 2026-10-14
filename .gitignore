@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+data/
+outputs/checkpoints/
+outputs/kaggle_download*/
+kaggle/_stage/
+paper/_preview/
+.ipynb_checkpoints/
+paper/main.aux
+paper/main.log
+paper/main.out
+paper/main.blg
+paper/main.spl

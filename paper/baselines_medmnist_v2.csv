@@ -1,0 +1,13 @@
+dataset,metric,published,source
+pathmnist,acc,0.907,"MedMNIST v2 (Yang et al., Sci Data 2023), Table 3, ResNet-18 (28)"
+chestmnist,auc,0.768,"MedMNIST v2 (Yang et al., Sci Data 2023), Table 3, ResNet-18 (28); multi-label macro-AUC"
+dermamnist,acc,0.735,"MedMNIST v2 (Yang et al., Sci Data 2023), Table 3, ResNet-18 (28)"
+octmnist,acc,0.743,"MedMNIST v2 (Yang et al., Sci Data 2023), Table 3, ResNet-18 (28)"
+pneumoniamnist,acc,0.854,"MedMNIST v2 (Yang et al., Sci Data 2023), Table 3, ResNet-18 (28)"
+retinamnist,acc,0.524,"MedMNIST v2 (Yang et al., Sci Data 2023), Table 3, ResNet-18 (28)"
+breastmnist,acc,0.863,"MedMNIST v2 (Yang et al., Sci Data 2023), Table 3, ResNet-18 (28)"
+bloodmnist,acc,0.958,"MedMNIST v2 (Yang et al., Sci Data 2023), Table 3, ResNet-18 (28)"
+tissuemnist,acc,0.676,"MedMNIST v2 (Yang et al., Sci Data 2023), Table 3, ResNet-18 (28)"
+organamnist,acc,0.935,"MedMNIST v2 (Yang et al., Sci Data 2023), Table 3, ResNet-18 (28)"
+organcmnist,acc,0.900,"MedMNIST v2 (Yang et al., Sci Data 2023), Table 3, ResNet-18 (28)"
+organsmnist,acc,0.782,"MedMNIST v2 (Yang et al., Sci Data 2023), Table 3, ResNet-18 (28)"

@@ -1,0 +1,32 @@
+{
+  "title": "When Should a Medical Image Classifier Abstain? A Cross-Modality Benchmark of Selective Prediction",
+  "version": "1.1.0",
+  "description": "<p>Code, logit bundles and results for a cross-modality benchmark of abstention (selective prediction) scores on medical image classifiers.</p><p>Eight scores are compared - maximum softmax probability, predictive entropy, temperature scaling, the top-1/top-2 margin, Monte-Carlo dropout, deep ensembles, and two split-conformal variants scored by prediction-set size (LAC and adaptive prediction sets) - across twelve MedMNIST 2D subsets covering eleven diagnostic modalities, with three random seeds per subset at 28x28 and two seeds at 128x128 on five subsets.</p><p>For every score the benchmark reports a post-hoc operating point and a deployable one whose threshold is fixed on the validation split, and it quantifies how far validation-calibrated thresholds and conformal quantiles miss their targets on test. Every number in the accompanying manuscript can be recomputed on CPU from the released logit bundles; the repository also contains the scripts that re-run the full training grid on a free GPU tier, the raw run logs, and the figures.</p>",
+  "creators": [
+    {
+      "name": "Li, Zhaoyang",
+      "affiliation": "Henan Polytechnic University, Jiaozuo, Henan, China",
+      "orcid": ""
+    }
+  ],
+  "keywords": [
+    "selective prediction",
+    "abstention",
+    "uncertainty quantification",
+    "conformal prediction",
+    "deep ensembles",
+    "medical image classification",
+    "benchmark"
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "10.1038/s41597-022-01721-8",
+      "relation": "isDerivedFrom",
+      "scheme": "doi"
+    }
+  ],
+  "notes": "The logit bundles are derived from MedMNIST v2 (CC BY 4.0); please cite MedMNIST as well. Developed with the assistance of OpenAI Codex; the author verified all code, results and text."
+}
